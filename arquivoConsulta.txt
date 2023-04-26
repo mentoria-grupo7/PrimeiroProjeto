@@ -1,0 +1,31 @@
+View:
+  https://reactnative.dev/docs/view
+Obs: Seria mesmo que a div, todos os componentes que tem de um componente dentro, precisam estar envolvidas em uma view
+
+Modal:
+ https://reactnative.dev/docs/modal
+
+
+Button:
+ https://reactnative.dev/docs/button
+
+Scroll da tela:
+  https://reactnative.dev/docs/scrollview
+Obs: Telas que tem muito conteúdo e que acabam estourando a tela, precisam de um componente de scroll
+
+Lista:
+  https://reactnative.dev/docs/flatlist
+Obs: utilizado para lista conteúdo em tela. seja horizontal ou vertical.
+
+Texto:
+  https://reactnative.dev/docs/text
+
+Input de texto:
+  https://reactnative.dev/docs/textinput
+
+Definição de área visivel:
+  https://reactnative.dev/docs/safeareaview
+
+
+Maps:
+ https://github.com/react-native-maps/react-native-maps
