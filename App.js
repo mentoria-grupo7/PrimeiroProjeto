@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import { LoginScreen } from './src/screens/loginScreen';
+import { LifeCicleScreen } from './src/screens/LifeCicleScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <LoginScreen/>
+     {/* <LoginScreen/> */}
+     <LifeCicleScreen  />
     </View>
   );
 }
