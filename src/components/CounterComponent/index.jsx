@@ -1,19 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { Text, View } from 'react-native'
 import { ButtonComponents } from '../ButtonComponents'
 
+// 0º Inicio tudo
+// 1º Montagem
+// 2º Atualização
+// 3º desmontagem
 export const CounterComponent = () => {
     const [ contador, setContador ] = useState(0)
     const [ disabled, setDisabled ] = useState(false)
 
-    //É executado depois que o componente foi montado
+    //É chamado depois que o componente foi montado
     useEffect(()=>{
         console.log('componentDidMount')
         console.log()
     },[])
 
-    //É executado quando o componente é executado
-    useEffect(()=>{
+    //É chamado quando o componente é atualizado
+    useEffect(()=> {
         console.log('componentDidUpdate')
         console.log()
         if(contador > 0){
@@ -26,7 +30,7 @@ export const CounterComponent = () => {
     },[contador])
 
 
-    //Isso é executado imediatamente antes de o componente ser removido
+    //Isso é chamado imediatamente antes de o componente ser removido
     useEffect(()=>{
         return () => {
             console.log('componentWillUnmount')

@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { View } from 'react-native'
-import { CounterComponent } from '../../components/CounterComponent'
+
 import { ButtonComponents } from '../../components/ButtonComponents'
+import { useLifeCicleScreen } from './useLifeCicleScreen'
 
 export const LifeCicleScreen = () => {
-    const [ showConter, setShouwCounter ] = useState(false)
-    const [ label, setLabel ] = useState('')
 
-    useEffect(()=>{
-        const label = showConter ? 'Esconder Componente' : 'Mostrar Componente'
-        setLabel(label)
-    },[showConter])
-
-    const handleCounter = () => {
-        if(showConter){
-            return <CounterComponent />
-        }
-    }
+    const { handleCounter, handleShowCounter, label } = useLifeCicleScreen()
+    
     return (
         <View style={{
             flex: 1,
@@ -28,7 +19,7 @@ export const LifeCicleScreen = () => {
             
             <ButtonComponents 
                 description={label} 
-                onPress={()=> setShouwCounter(!showConter)} 
+                onPress={handleShowCounter} 
             />
         </View>
     )
