@@ -10,7 +10,10 @@ export const HomeScreen = () => {
     return (
         <View>
             <Text>Tela da home</Text>
-            <ButtonComponents description={'Navegar'} onPress={()=> navigation.push('Settings') } />
+            <ButtonComponents 
+                description={'Navegar'} 
+                onPress={()=> navigation.push('Settings') } 
+            />
         </View>
     )
 }

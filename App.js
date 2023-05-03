@@ -10,7 +10,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       {/*<TabScreen/>*/}
       {/*<StackScreen />*/}
-      {/*<DrawerScreen/>*/}
+      <DrawerScreen/>
     </SafeAreaView>
   );
 }

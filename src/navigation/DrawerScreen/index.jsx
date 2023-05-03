@@ -5,12 +5,12 @@ import { HomeScreen } from '../../screens/HomeScreen';
 import { SettingsScreen } from '../../screens/SettingsScreen';
 /*
     É importante instalar uma lib chamado reanimated
-    npx expo install react-native-gesture-handler react-native-reanimated
+    npx expo install react-native-gesture-handler
+    npx expo install react-native-reanimated
 
-        module.exports = {
-            ...
-            plugins: ['react-native-reanimated/plugin'],
-        };
+    module.exports = {
+        plugins: ['react-native-reanimated/plugin'],
+    };
 */
 const Drawer = createDrawerNavigator();
 
