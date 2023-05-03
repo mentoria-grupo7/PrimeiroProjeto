@@ -1,9 +1,12 @@
 import React from 'react'
 import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './style'
+import { useNavigation } from '@react-navigation/native'
 
 export const LoginComponents = ({ onChangeEmail, onChangeSenha }) => {
     
+    const navigation = useNavigation()
+
     return (
         <View>
             <TextInput 
@@ -20,7 +23,7 @@ export const LoginComponents = ({ onChangeEmail, onChangeSenha }) => {
             />
             <TouchableOpacity
                 style={styles.botao} 
-                onPress={()=>console.log('clickou aqui')}>
+                onPress={()=> navigation.push('Home') }>
                     
                 <Text style={styles.textoBotao}>login</Text>
             </TouchableOpacity>

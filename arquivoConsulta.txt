@@ -29,3 +29,7 @@ Definição de área visivel:
 
 Maps:
  https://github.com/react-native-maps/react-native-maps
+
+
+ Combinar tipo de navegação:
+  https://dev.to/easybuoy/combining-stack-tab-drawer-navigations-in-react-native-with-react-navigation-5-da

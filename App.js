@@ -1,15 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
-import { LoginScreen } from './src/screens/loginScreen';
-import { LifeCicleScreen } from './src/screens/LifeCicleScreen';
+import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import 'react-native-gesture-handler';
+import { TabScreen } from './src/navigation/TabScreen';
+import { StackScreen } from './src/navigation/StackScreen';
+import DrawerScreen from './src/navigation/DrawerScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-     {/* <LoginScreen/> */}
-     <LifeCicleScreen  />
-    </View>
+    <SafeAreaView style={styles.container}>
+      {/*<TabScreen/>*/}
+      {/*<StackScreen />*/}
+      {/*<DrawerScreen/>*/}
+    </SafeAreaView>
   );
 }
 
@@ -17,7 +19,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingHorizontal: 16,
-    paddingVertical: 16
   },
 });
